@@ -1,6 +1,8 @@
+<!--GITHUB
 page_title: Configure a Registry
 page_description: Explains how to deploy a registry 
 page_keywords: registry, service, images, repository
+IGNORES-->
 
 
 # Registry Configuration Reference
@@ -115,6 +117,34 @@ In some instances a configuration option is **optional** but it contains child
 options marked as **required**. This indicates that you can omit the parent with
 all its children. However, if the parent is included, you must also include all
 the children marked **required**.
+
+## Override configuration options
+
+You can use environment variables to override most configuration parameters. The
+exception is the `version` variable which cannot be overridden. You can set
+environment variables on the command line using the `-e` flag on `docker run` or
+from within a Dockerfile using the `ENV` instruction.
+
+To override a configuration option, create an environment variable named
+`REGISTRY\variable_` where *`variable`* is the name of the configuration option
+and the `_` (underscore) represents indention levels. For example, you can
+configure the `rootdirectory` of the `filesystem` storage backend:
+
+```
+storage:
+	filesystem:
+		rootdirectory: /tmp/registry
+```
+
+To override this value, set an environment variable like this:
+
+```
+REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY=/tmp/registry/test
+```
+
+This variable overrides the `/tmp/registry` value to the `/tmp/registry/test`
+directory.
+
 
 ## version 
 
