@@ -1,8 +1,8 @@
-<head>
+<script>
 page_title: Configure a Registry
 page_description: Explains how to deploy a registry 
 page_keywords: registry, service, images, repository
-</head>
+</script>
 
 # Registry Configuration Reference
 
