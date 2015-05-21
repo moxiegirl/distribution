@@ -1,8 +1,11 @@
-<!--GITHUB
-page_title: Filesystem storage driver
-page_description: Explains how to use the filesystem storage drivers
-page_keywords: registry, service, driver, images, storage, filesystem
-IGNORES-->
++++
+title = "Filesystem storage driver"
+description = "Explains how to use the filesystem storage drivers"
+keywords = ["registry, service, driver, images, storage,  filesystem"]
+[menu.main]
+parent= "smn_registry" 
++++
+
 
 # Filesystem storage driver
 

@@ -1,6 +1,10 @@
-page_title: Build the development environment
-page_description: Explains how to build the distribution project
-page_keywords: registry, service, images, repository
++++
+title = "Build the development environment"
+description = "Explains how to build the distribution project"
+keywords = ["registry, service, images,  repository"]
+[menu.main]
+parent= "smn_registry"
++++
 
 # Build the development environment
 

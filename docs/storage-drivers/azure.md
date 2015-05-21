@@ -1,8 +1,11 @@
-<!--GITHUB
-page_title: Microsoft Azure storage driver
-page_description: Explains how to use the Azure storage drivers
-page_keywords: registry, service, driver, images, storage, azure
-IGNORES-->
++++
+title = "Microsoft Azure storage driver"
+description = "Explains how to use the Azure storage drivers"
+keywords = ["registry, service, driver, images, storage,  azure"]
+[menu.main]
+parent= "smn_registry" 
++++
+
 
 # Microsoft Azure storage driver
 
