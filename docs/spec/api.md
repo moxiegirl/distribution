@@ -5,7 +5,6 @@ description = "Specification for the Registry API."
 keywords = ["registry, on-prem, images, tags, repository, distribution, api, advanced"]
 aliases = ["/registry/spec/"]
 [menu.main]
-parent="smn_registry_ref"
 +++
 <![end-metadata]-->
 
@@ -567,7 +566,7 @@ the uploads endpoint, including the "size" and "digest" parameters:
 POST /v2/<name>/blobs/uploads/?digest=<tarsum>[&digest=sha256:<hex digest>]
 Content-Length: <size of layer>
 Content-Type: application/octet-stream
-  
+
 <Layer Binary Data>
 ```
 
@@ -579,7 +578,7 @@ a place to continue the download.
 
 The single `POST` method is provided for convenience and most clients should
 implement `POST` + `PUT` to support reliable resume of uploads.
-  
+
 ##### Chunked Upload
 
 To carry out an upload of a chunk, the client can specify a range header and
@@ -4563,8 +4562,3 @@ The following headers will be returned with the response:
 |----|-----------|
 |`Content-Length`|Length of the JSON response body.|
 |`Link`|RFC5988 compliant rel='next' with URL to next result set, if available|
-
-
-
-
-

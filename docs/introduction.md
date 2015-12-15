@@ -4,7 +4,6 @@ title = "Understanding the Registry"
 description = "Explains what the Registry is, basic use cases and requirements"
 keywords = ["registry, on-prem, images, tags, repository, distribution, use cases, requirements"]
 [menu.main]
-parent="smn_registry"
 weight=2
 +++
 <![end-metadata]-->
